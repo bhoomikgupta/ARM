@@ -1,0 +1,10 @@
+10:25:23 **** Incremental Build of configuration Debug for project TIM_INT_A5 ****
+make -j4 all 
+arm-none-eabi-size   TIM_INT_A5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8380	     20	   1644	  10044	   273c	TIM_INT_A5.elf
+Finished building: default.size.stdout
+ 
+
+10:25:23 Build Finished. 0 errors, 0 warnings. (took 411ms)
+

@@ -1,0 +1,10 @@
+10:19:10 **** Incremental Build of configuration Debug for project TIM_PWM_A6 ****
+make -j4 all 
+arm-none-eabi-size   TIM_PWM_A6.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9520	     20	   1644	  11184	   2bb0	TIM_PWM_A6.elf
+Finished building: default.size.stdout
+ 
+
+10:19:11 Build Finished. 0 errors, 0 warnings. (took 388ms)
+

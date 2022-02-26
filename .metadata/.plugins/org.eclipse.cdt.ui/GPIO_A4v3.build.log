@@ -1,0 +1,31 @@
+09:57:50 **** Incremental Build of configuration Debug for project GPIO_A4v3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:178:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  178 | HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:178:1: warning: conflicting types for 'HAL_GPIO_EXTI_Callback'
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:278,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:241:6: note: previous declaration of 'HAL_GPIO_EXTI_Callback' was here
+  241 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "GPIO_A4v3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gupta\STM32CubeIDE\workspace_1.6.1\GPIO_A4v3\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO_A4v3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO_A4v3.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO_A4v3.elf  > "GPIO_A4v3.list"
+arm-none-eabi-objcopy  -O binary  GPIO_A4v3.elf  "GPIO_A4v3.bin"
+arm-none-eabi-size   GPIO_A4v3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5960	     20	   1572	   7552	   1d80	GPIO_A4v3.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO_A4v3.bin
+ 
+Finished building: GPIO_A4v3.list
+ 
+
+09:57:52 Build Finished. 0 errors, 2 warnings. (took 2s.391ms)
+
