@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;USB_MINICOM&apos; to &apos;USB_A15&apos;" description="Rename resource &apos;USB_MINICOM&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/USB_MINICOM" name="USB_A15" stamp="1624505373971" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;SPI_A16&apos;" deleteContents="true" description="Delete resource &apos;SPI_A16&apos;" element1="/SPI_A16" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1624597894246"/>
-</session>
